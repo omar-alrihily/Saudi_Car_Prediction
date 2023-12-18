@@ -101,7 +101,7 @@ df = pd.DataFrame([my_dict])
 #evaluation
 if st.button("Predict", type="primary"):
     pred = model.predict(df)
-    st.markdown("### Your car's estimated price is **{} SR**.".format(int(pred)))
+    st.markdown("### Your car's estimated price is **{} SR**.".format(abs(int(pred))))
     
     
 
