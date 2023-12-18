@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
-from sklearn.linear_model import Lasso
+
 from git import Object
 import base64
 
