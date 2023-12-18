@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
-
+from sklearn.linear_model import LinearRegression
 from git import Object
 import base64
 
@@ -43,10 +43,9 @@ st.write('\n')
 
 st.text("    ")
 
-
-
 #pickles
 model = pickle.load(open("LG_model2.pkl","rb"))
+#columns = pickle.load(open("columns.pkl", 'rb'))
 
 
 st.header("*Enter the Features of Your Car*")
