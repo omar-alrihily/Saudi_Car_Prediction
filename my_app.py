@@ -45,10 +45,8 @@ st.text("    ")
 
 
 
-uploaded_file = st.file_uploader("LG_model2.pkl", type=["pkl"])
-
-if uploaded_file is not None:
-    model = pickle.load(uploaded_file)
+#pickles
+model = pickle.load(open("LG_model2.pkl","rb"))
 
 
 st.header("*Enter the Features of Your Car*")
